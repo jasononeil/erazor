@@ -3,6 +3,15 @@ class TestAll
 {
 	static function main()
 	{
+		#if js
+		js.Browser.window.onload = run; 
+		#else 
+		run();
+		#end 
+	}
+
+	static function run(?e)
+	{
 		var runner = new utest.Runner();
 		
 		runner.addCase(new erazor.TestParser());
