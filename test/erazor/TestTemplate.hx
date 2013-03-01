@@ -1,6 +1,7 @@
 ﻿package erazor;
 
 import utest.Assert;
+import haxe.ds.StringMap;
 
 class TestTemplate
 {
@@ -16,7 +17,7 @@ class TestTemplate
 
 	public function test_If_basic_vars_are_parsed_correctly_with_hash()
 	{
-		var vars = new Hash<String>();
+		var vars = new StringMap<String>();
 		vars.set('name', 'Boris');
 		
 		template = new Template('Hello @name');

@@ -153,7 +153,6 @@ class MacroTest9 extends erazor.macro.Template<{str:String}>
 	
 }
 
-import haxe.Int32;
 @:template("@Int32.make(0x1234,0x5678)")
 class MacroTest10 extends erazor.macro.Template<Dynamic>
 {

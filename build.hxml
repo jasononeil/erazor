@@ -6,7 +6,8 @@
 -lib utest
 -lib hscript
 -swf bin/TestAll.8.swf
-# @tm-preview
+-swf-version 8
+# @8-preview
 
 --next
 
@@ -16,7 +17,8 @@
 -cp src
 -lib utest
 -lib hscript
--swf9 bin/TestAll.9.swf
+-swf bin/TestAll.9.swf
+-swf-version 9
 # @tm-preview
 
 --next
